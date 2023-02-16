@@ -8,18 +8,17 @@
        -object: là thực thể do PHP sinh ra từ các định nghĩa lớp,
         thực thể này có thể chứa trong nó dữ liệu và các hàm thi hành
        -callable: Tham chiếu tới đối tượng có thể gọi thực thi, gọi là các callback
-       -iterable:là kiểu có thề dùng với vòng lặp foreach
 */
-    //kiểu số nguyên int:Kiểu số nguyên 
+        //kiểu số nguyên int:Kiểu số nguyên 
     $number = 2233;
     echo $number;
-    //Kiểu số thực float
+        //Kiểu số thực float
     $PI = 3.14;
     echo $PI;
-    //kiểu string
+        //kiểu string
     $name = 'Hoàng đăng toàn';
     echo $name;
-    //boolean false
+        //boolean false
     $int = (bool)0 ;//dữ liệu = 0
     $int = (bool)'0' ;//chuôi = 0
     $int = (bool)null;//dữ liệu = null
@@ -27,12 +26,12 @@
     $arr = [];
     $int = (bool)$arr;//dữ liệu mảng rỗng 
     var_dump($int);
-    //Mảng tuần tự là mảng có key tự động tạo bắt đầu từ 0
+        //Mảng tuần tự là mảng có key tự động tạo bắt đầu từ 0
     $arr = ['A','B','C','D'];
     echo '<pre>';
     var_dump($arr);
     echo '</pre>';
-    //Mảng không tuần tự là mảng có key mà bạn tự định nghĩa 
+        //Mảng không tuần tự là mảng có key mà bạn tự định nghĩa 
     $arr1 = [
         'a' => 'abd',
         '1' => '234',
@@ -40,7 +39,7 @@
     echo '<pre>';
     var_dump($arr1);
     echo '</pre>';
-    //Mảng đa chiều là là mảng có chứa ít nhất một mảng khác trong nó.
+        //Mảng đa chiều là là mảng có chứa ít nhất một mảng khác trong nó.
     $arr2 = [
         ['Hoàng'],
         ['Đăng'],
@@ -49,9 +48,16 @@
     echo '<pre>';
     var_dump($arr2[0]);//in ra Hoàng
     echo '</pre>';
-    //callback
+          //callback
     function tinhtoan($pheptinh, $a, $b) {
         $pheptinh($a, $b);//callback
     }
     
     tinhtoan('phepcong', 5,5); // in ra 10
+    /*
+    ==============Phân loại toán tử trong php==============
+        - Toán tử số học: + , - , * , / , % , ++ , --
+        - Toán tử so sánh: == , >= , <= , != , === < , >
+        - Toán tử Logic: and , or , && , || , !
+        - Toán tử gán: = , += , -= , *= , /= ,%=
+    */
